@@ -17,7 +17,7 @@ app.use(express.static("public"));
 
 
  app.get("/", function(req, res){
-   const day = date.getDay();
+   const day = date.getDate();
     
     res.render("list", {listTitle: day, newListItem: items});
  });
