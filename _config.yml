@@ -1,1 +1,12 @@
 theme: jekyll-theme-cayman
+name: Completed ToDo List App
+on: push
+jobs:
+  firts-job:
+    name: Todo List App
+    steps:
+    -run: npm install
+    -run: npm ejs
+    -run: npm install body-parser
+    -run: npm install express
+    -run: node index.js
