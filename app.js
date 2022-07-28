@@ -50,6 +50,6 @@ app.use(express.static("public"));
 
 
  // Serrver setup -------------------------//
-app.listen(3000, function(){
+app.listen(process.env.PORT ||3000, function(){
 console.log("Server started on port 300");
 });
